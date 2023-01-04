@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img_url": "https://picture.rumah123.com/r123-images/750x364-crop/customer/1651547/2022-08-29-10-01-20-2190f390-d72a-46b0-9d58-6653c796ef2b.jpg",
+      "price": "2000",
+      "title": "rumah ",
+      "desc": "bagus"
+    },
+    {
+      "id": 2,
+      "img_url": "https://picture.rumah123.com/r123/750x364-crop/house/ho76/7668165/original/hos7668165-rumah-di-jual-di-bandung-kota-di-bandung-16371455496881.jpg",
+      "price": "5000",
+      "title": "rumah2",
+      "desc": "nyaman dan asri"
+    },
+    {
+      "id": 3,
+      "img_url": "https://id1-cdn.pgimgs.com/listing/18758644/UPHO.106980136.V800/Rumah-Mewah-3-Lantai-Jakarta-Utara-Indonesia.jpg",
+      "price": "200000000",
+      "title": "rumah 3 lantai",
+      "desc": "rumah 3 lantai"
+    }
+  ]
+}

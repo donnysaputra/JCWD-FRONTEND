@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "doni",
+      "email": "doni@mail.com",
+      "username": "doni123",
+      "password": "1234",
+      "avatar_url": "https://img.a.transfermarkt.technology/portrait/big/28003-1671435885.jpg?lm=1"
+    },
+    {
+      "id": 2,
+      "name": "doni",
+      "email": "doni@mail.com",
+      "username": "doni111",
+      "password": "1234",
+      "avatar_url": "https://img.a.transfermarkt.technology/portrait/big/28003-1671435885.jpg?lm=1"
+    },
+    {
+      "id": 3,
+      "name": "donny",
+      "email": "dony@mail.com",
+      "username": "donny123",
+      "password": "123456",
+      "avatar_url": ""
+    },
+    {
+      "id": 4,
+      "name": "donii",
+      "email": "doni@mail.com",
+      "username": "doni1235",
+      "password": "1234",
+      "avatar_url": ""
+    },
+    {
+      "id": 5,
+      "name": "doni",
+      "email": "donnysaputra501@gmail.com",
+      "username": "doni1234",
+      "password": "123",
+      "avatar_url": ""
+    }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Nike Dunk High Retro",
+      "price": 165,
+      "brand": "men",
+      "img": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/w_411,c_limit/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-shoe-1PhQRw.png"
+    },
+    {
+      "id": 2,
+      "name": "Nike Air ",
+      "price": "135",
+      "brand": "men",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-rWtqPn.png"
+    },
+    {
+      "id": 3,
+      "name": "Nike Dunk High Retro",
+      "price": 175,
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9cec8253-5997-42f6-9602-e20eb69142e2/dunk-high-retro-shoes-K1nb6g.png"
+    },
+    {
+      "id": 4,
+      "name": "Nike Dunk High Retro",
+      "price": 175,
+      "brand": "men",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9cec8253-5997-42f6-9602-e20eb69142e2/dunk-high-retro-shoes-K1nb6g.png"
+    },
+    {
+      "id": 5,
+      "name": "Nike Dunk High Retro",
+      "price": 175,
+      "brand": "men",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/818bb456-4fb5-49c9-bc6c-51d7f4d0f371/court-vision-low-shoes-TGRtWS.png"
+    },
+    {
+      "id": 6,
+      "name": "Air Jordan 1 Low FlyEase",
+      "price": "170",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c448b55f-60fd-46e9-a818-0d9bc392e8b1/air-jordan-1-low-flyease-easy-on-off-shoes-28LT69.png"
+    },
+    {
+      "id": 7,
+      "name": "Air Jordan 1 Low FlyEase",
+      "price": "170",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c448b55f-60fd-46e9-a818-0d9bc392e8b1/air-jordan-1-low-flyease-easy-on-off-shoes-28LT69.png"
+    },
+    {
+      "id": 8,
+      "name": "Air Jordan Low",
+      "price": "175",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c448b55f-60fd-46e9-a818-0d9bc392e8b1/air-jordan-1-low-flyease-easy-on-off-shoes-28LT69.png"
+    },
+    {
+      "id": 9,
+      "name": "Air Jordan Low ",
+      "price": "175",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c448b55f-60fd-46e9-a818-0d9bc392e8b1/air-jordan-1-low-flyease-easy-on-off-shoes-28LT69.png"
+    },
+    {
+      "id": 10,
+      "name": "Air Zoom Pegasus",
+      "price": "180",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f08d2d36-816b-4bfd-ae12-bc4a228bd060/air-zoom-pegasus-39-shield-weatherised-road-running-shoes-Fp3SPv.png"
+    }
+  ]
+}

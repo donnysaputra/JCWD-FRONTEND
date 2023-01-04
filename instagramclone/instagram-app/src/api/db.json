@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "jordan.ongg",
+      "avatar_url": "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      "image_url": "https://i.pinimg.com/736x/67/d4/ed/67d4ed03bc00b6a159b456484b54b42f.jpg",
+      "number_of_likes": 198,
+      "liked": true,
+      "bookmarked": true,
+      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
+      "comments": [
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "nice car man"
+        },
+        {
+          "username": "jordan.ongg",
+          "avatar_url": "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+          "comment": "thanks bro"
+        },
+        {
+          "username": "test",
+          "avatar_url": "",
+          "comment": "hello boys"
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": " "
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": " "
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "halooo"
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "tes halo"
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "halo22222222"
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "haloo333"
+        },
+        {
+          "username": "kenny.s",
+          "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+          "comment": "asdas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "kenny.s",
+      "avatar_url": "https://liveboldandbloom.com/wp-content/uploads/2021/09/Untitled_design_3_1.png",
+      "image_url": "https://preview.redd.it/aipg2jghyzp81.jpg?auto=webp&s=ec773acc4490220da7205a968b2f387942e0c828",
+      "number_of_likes": 54,
+      "bookmarked": true,
+      "liked": true,
+      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
+      "comments": [
+        {
+          "username": "test",
+          "avatar_url": "",
+          "comment": "hello boys"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "arnold.chef",
+      "avatar_url": "https://newyorkcomedyclub.com/img/imagetest/felonious-munk-d4db0b52-main-image.jpg",
+      "image_url": "https://preview.redd.it/cwqym95n7g391.png?auto=webp&s=abbb596194dcdebed1e58bd6befc06cc7cc45ad9",
+      "number_of_likes": 102,
+      "liked": true,
+      "bookmarked": false,
+      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
+      "comments": []
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "udin"
+    },
+    {
+      "id": 2,
+      "username": "jason"
+    },
+    {
+      "id": 3,
+      "username": "badra"
+    }
+  ]
+}

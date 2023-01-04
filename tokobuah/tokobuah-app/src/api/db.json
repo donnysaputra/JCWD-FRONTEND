@@ -1,0 +1,18 @@
+{
+  "products": [
+  {
+    "id":1,
+    "product" :"apel",
+    "img_url" : "https://d1bpj0tv6vfxyp.cloudfront.net/khasiatbuahapelyangcocokuntuk6penyakitinihalodoc.jpg",
+    "price" : 20000
+
+  },
+  {
+    "id":2,
+    "product" :"apel",
+    "img_url" : "https://d1bpj0tv6vfxyp.cloudfront.net/khasiatbuahapelyangcocokuntuk6penyakitinihalodoc.jpg",
+    "price" : 20000
+
+  }
+]
+}
