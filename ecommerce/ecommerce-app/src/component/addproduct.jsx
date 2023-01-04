@@ -34,10 +34,22 @@ function AddProduct(props){
         setSepatu(res.data)
    
     }
+
+    const newData ={
+        id : 0,
+        name : "",
+        price :0,
+        brand:"",
+        img :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWc7g5DWDOAp7pqzkLV6tSclMjZz8NSN7S9a2GzQnN5AVbDn8ohRBWV2CjnkyJSjk6tS4&usqp=CAU"
+ 
+    }
     useEffect(()=>{
             
             fetchShoes()
+            if(location.state !== null){
             setShoes({...location.state.data})
+            
+        }
            
            
     },[])
@@ -80,15 +92,15 @@ function AddProduct(props){
                         <Image  src={logotext} w="300px" h="80px"  mt="30px"  />
                         
                     </Center>
-                    <Center><Text fontSize="40px" fontFamily={"helvetica"} fontWeight="bold">test</Text></Center>
+                    <Center><Text fontSize="40px" fontFamily={"helvetica"} fontWeight="bold">{!shoes.id? "Add Product" : "Edit Product"}</Text></Center>
                   
                     <Grid templateColumns={"2fr 4fr"} gap={1} marginY="0px" borderTop={"1px solid lightgrey"} pt="40px" >
                         <Image ml="20px" src={shoes.img} minW="350px" minH="350px" w="350px" h="350px" ></Image>
                         <Grid templateRows={"0.8fr 0.8fr 0.8fr 1fr 0.5fr"}  w="500px" h="350px"  >
                             <Input marginX={"20px"} name="name" type="text" onChange={inputHandler} w="480px" h="40px" pl="15px" border="1px solid lightgrey" placeholder="Product Name" value={shoes.name}></Input>
                             <Input marginX={"20px"} name="brand" type="text" onChange={inputHandler} w="480px" h="40px" pl="15px" border="1px solid lightgrey" placeholder="Product Brand" value={shoes.brand}></Input>
-                            <Input marginX={"20px"} name="price" type="text" onChange={inputHandler} w="480px" h="40px" pl="15px" border="1px solid lightgrey" placeholder="Product Price" value={shoes.price}></Input>
-                            <Input marginX={"20px"} name="img" type="text" onChange={inputHandler} w="480px" h="40px"pl="15px" border="1px solid lightgrey" placeholder="Product Image URL" value={shoes.img}></Input>
+                            <Input marginX={"20px"} name="price" type="text" onChange={inputHandler} w="480px" h="40px" pl="15px" border="1px solid lightgrey" placeholder="Product Price" value={shoes.price === 0? "": shoes.price}></Input>
+                            <Input marginX={"20px"} name="img" type="text" onChange={inputHandler} w="480px" h="40px"pl="15px" border="1px solid lightgrey" placeholder="Product Image URL" value={shoes.img === "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWc7g5DWDOAp7pqzkLV6tSclMjZz8NSN7S9a2GzQnN5AVbDn8ohRBWV2CjnkyJSjk6tS4&usqp=CAU"? "" : shoes.img }></Input>
                             
                             <Flex justifyContent={"center"}>
                             

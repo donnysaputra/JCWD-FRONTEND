@@ -43,6 +43,9 @@ export default function Navbar(props) {
       navigate("/")
     }
 
+    function add(){
+      navigate("/addproduct")
+  }
     return (
         <> 
         {
@@ -52,9 +55,18 @@ export default function Navbar(props) {
           <>
           <Flex w={"full"} h={"80px"} bgColor={"#F6F6F6"} justifyContent="space-between" paddingX="20px">
             <Image src={logotext} w="200px" h="40px" marginY={"20px"} marginLeft="15px" ></Image>
-            <Input type="text" w={selectbtn? "900px":"820px"} h="50px" placeholder="Search" paddingLeft="10px" marginRight={selectbtn? "70px" : null} marginY="15px" border="1px solid grey" borderRadius={"5px"}/> 
+            <Input type="text" w={selectbtn? "900px":"820px"} h="50px" placeholder="Search" paddingLeft="10px" marginRight={selectbtn? "30px" : null} marginLeft={selectbtn? "40px" :null} marginY="15px" border="1px solid grey" borderRadius={"5px"}/> 
             {selectbtn?
-            null
+            
+            <Flex  gap={2}   justifyContent="space-between" alignContent={"center"}>
+            <Button border={"1px solid grey"} h="40px" w={"120px"} marginY="20px" marginRight ="30px" bgColor={"#003334"} color="white"
+              sx={{
+                _hover: {
+                  bgColor: "#999498",
+                },}}
+              onClick={add}
+            >Add Product</Button>
+            </Flex>
             :
             <Flex  gap={2}   justifyContent="space-between" alignContent={"center"}>
             <Button border={"1px solid grey"} h="40px" w={"100px"} marginY="20px" bgColor={"#003334"} color="white"
