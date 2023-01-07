@@ -13,17 +13,7 @@ import { useEffect } from 'react';
 
 function App() {
 
-  const dispatch = useDispatch()
-
-    const savedUserData = localStorage.getItem("user_data")
-    if(savedUserData){
-    const parseUserData = JSON.parse(savedUserData)
-      dispatch({
-        type: user_types.USER_LOGIN,
-        payload: parseUserData
-      })
-    }
-    
+  
 
   return (
     <Routes key={"route"}>

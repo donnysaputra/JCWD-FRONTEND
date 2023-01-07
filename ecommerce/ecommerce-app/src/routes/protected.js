@@ -10,7 +10,7 @@ function ProtectedPage ({
 }){
     let navigate = useNavigate()
     const userSelector = useSelector((state) => state.auth)
-
+    console.log(userSelector.id)
     useEffect(()=>{
         
         if(needLogin && !userSelector.id){

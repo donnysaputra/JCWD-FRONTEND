@@ -16,6 +16,7 @@ export default function Navbar(props) {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const [search,setSearch] = useState('')
     const [selectava,setSelectedava] = useState(false)
     const [selectbtn,setSelectedbtn] = useState(false)
     const [isLoading,setIsLoading] = useState(false)
@@ -46,6 +47,16 @@ export default function Navbar(props) {
     function add(){
       navigate("/addproduct")
   }
+
+  function handlerSearch(event){
+    const {name,value} = event.target;
+    if(name === "search"){
+      setSearch(value)
+    }
+    navigate('/',{state:{dataSearch:search}})
+    console.log(search)
+    
+  }
     return (
         <> 
         {
@@ -54,8 +65,12 @@ export default function Navbar(props) {
           :
           <>
           <Flex w={"full"} h={"80px"} bgColor={"#F6F6F6"} justifyContent="space-between" paddingX="20px">
-            <Image src={logotext} w="200px" h="40px" marginY={"20px"} marginLeft="15px" ></Image>
-            <Input type="text" w={selectbtn? "900px":"820px"} h="50px" placeholder="Search" paddingLeft="10px" marginRight={selectbtn? "30px" : null} marginLeft={selectbtn? "40px" :null} marginY="15px" border="1px solid grey" borderRadius={"5px"}/> 
+            <Image src={logotext} w="200px" h="40px" marginY={"20px"} marginLeft="15px" onClick={()=> {navigate("/login")}}  sx={{
+                _hover: {
+                  cursor: "pointer",
+                },}}></Image>
+            <Input type="text" w={selectbtn? "900px":"820px"} h="50px" name ="search" onChange={handlerSearch}
+            placeholder="Search" paddingLeft="10px" marginRight={selectbtn? "30px" : null} marginLeft={selectbtn? "40px" :null} marginY="15px" border="1px solid grey" borderRadius={"5px"}/> 
             {selectbtn?
             
             <Flex  gap={2}   justifyContent="space-between" alignContent={"center"}>

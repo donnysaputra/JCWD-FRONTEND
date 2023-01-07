@@ -7,6 +7,8 @@ import user_types from '../redux/auth/types';
 import { useNavigate } from 'react-router-dom';
 import { SiNike } from 'react-icons/si';
 import logotext from "../assests/logo.png"
+import { useEffect } from 'react';
+import { userLogin } from '../redux/middleware/userauth';
 function Login(){
 
   const dispatch = useDispatch()
@@ -32,27 +34,22 @@ function Login(){
 
   async function login() {
     if(!user.username || !user.password){
-      setAlert(true)
+      return setAlert(true)
     }
-    const res = await axiosInstance.get("/users/" ,{params : user})
-    const userData = res.data[0]
-
-    dispatch({
-      type :user_types.USER_LOGIN,
-      payload : userData
-    })
-
-    localStorage.setItem("user_data", JSON.stringify(userData))
-    userData? navigate("/",{state : {user:res.data[0]} , replace:true}) : setStatus(true)
-    console.log(userData)
+    const isAuth = await dispatch(userLogin(user))
+    console.log(isAuth)
+    if(isAuth.status){
+      return navigate("/",{state:{user:isAuth.data},replace:true})
+    }
+    return setStatus(true)
   }
 
 
   return(
             
             
-    <Flex direction={"column"} bgColor={"#fff"} w={"400px"} h={"600px"} py={"10px"} mt={"25px"} borderColor={"#DFDFDF"} borderWidth={"1px"}>
-        <Flex h={"110px"} justifyContent={"center"} alignItems={"center"} flexDir="column" gap={3} mt={"60px"} mb="50px">
+    <Flex direction={"column"} bgColor={"#fff"} w={"400px"} h={"600px"} py={"10px"} mt={"10px"} borderColor={"#DFDFDF"} borderWidth={"1px"}>
+        <Flex h={"110px"} justifyContent={"center"} alignItems={"center"} flexDir="column" gap={3} mt={"50px"} mb="60px">
              <Image src={logotext} minH="200px" h="200px" />
         </Flex>
         
@@ -64,7 +61,7 @@ function Login(){
             <Alert status='error' color={"black"} bgColor="#FED7D7" alignItems='center'
               justifyContent='center'
                textAlign='center' w={"350px"} h="50px">
-              <AlertIcon boxSize={5} color="red" />
+              <AlertIcon boxSize={5} color="red"  />
               Please Fill Your Username and Password 
             </Alert>
             </Center>
@@ -73,7 +70,7 @@ function Login(){
             }
              {status?
             <Center>
-            <Alert status='error' color={"black"} bgColor="#FED7D7" alignItems='center'
+            <Alert status='error' color={"black"} bgColor="#FED7D7" alignItems='center' zIndex={2}
               justifyContent='center'
                textAlign='center' w={"350px"} h="50px">
               <AlertIcon boxSize={5} color="red" />
@@ -86,7 +83,7 @@ function Login(){
 
             
             <Flex W="350px" mt="15px">
-            <Text color="#999498" fontSize={"12px"} fontFamily="helvetica">By logging in, you agree to Nike's</Text>  
+            <Text color="#999498" fontSize={"12px"} fontFamily="helvetica">By logging in, you agree to Easy Kicks</Text>  
            <Text color="#003334" fontSize={"12px"} fontFamily="helvetica"  cursor="pointer" ml="5px">Privacy Policy</Text>
            <Text color="#999498" fontSize={"12px"} fontFamily="helvetica" ml="5px">and</Text>  
            </Flex>
@@ -96,13 +93,6 @@ function Login(){
           <Text color="#999498" fontWeight={"500"}>Not a Member ?</Text> 
           <Link href='/register'  variant={"unstyled"}><Text fontWeight={"500"} ml="5px"color={"#003334"}>Join Us</Text></Link>
           </Flex>
-          {status ?
-            <Alert status='error' zIndex={2} variant="top-accent" >
-            <AlertIcon />
-            wrong username/password
-            </Alert>:
-            null 
-            }
         </Center>
 
         

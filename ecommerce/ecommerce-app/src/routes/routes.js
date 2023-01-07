@@ -3,14 +3,13 @@ import LoginPage from "../pages/loginpage";
 import RegisterPage from "../pages/registerpage";
 import ProtectedPage from "./protected";
 import AddProduct from  "../component/addproduct"
+import ErrorPage from "../component/errorpage";
 
  const routes = [
     {
         path : "/",
         element :(
-            <ProtectedPage needLogin={true}>
                 <HomePage/>
-            </ProtectedPage>    
                 ) 
     },
     {
@@ -24,15 +23,23 @@ import AddProduct from  "../component/addproduct"
     },
     {
         path : "/register",
-        element : <RegisterPage/>
+        element : (
+            <ProtectedPage guestOnly={true}>
+                <RegisterPage/>
+            </ProtectedPage>
+            )
     },
     {
         path : "/*",
-        element : <RegisterPage/>
+        element : <ErrorPage/>
     },
     {
         path: "/addproduct",
-        element: <AddProduct />,
+        element: (
+                <ProtectedPage needLogin={true}>
+                <AddProduct />
+                </ProtectedPage>)
+
     }
 
 

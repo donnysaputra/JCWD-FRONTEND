@@ -6,7 +6,7 @@ import axiosInstance from "../config/config";
 import { useEffect } from "react";
 import { Grid,Center,Image, Flex, GridItem ,Box,Button,Text} from "@chakra-ui/react";
 import Shoes from "../component/shoes";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Loading from "../component/loading";
 import AddProduct from "../component/addproduct";
@@ -15,7 +15,8 @@ function HomePage(){
     const navigate = useNavigate()
     const [shoes,setShoes] = useState([])
     const [isLoading,setIsLoading] = useState(true)
-
+    const location = useLocation()
+    const [search,setSearch]=useState("")
 
     const userSelector = useSelector((state)=> state.auth);
 
@@ -28,12 +29,14 @@ function HomePage(){
    
   
     useEffect(() =>{
+       
         setTimeout(()=>{
             setIsLoading(!isLoading)
             
         },50)
-        fetchShoes()
-   
+        setSearch(location?.state?.dataSearch)
+        fetchShoes()       
+        console.log(location?.state?.dataSearch)
     },[])
     return(
         <>
@@ -48,6 +51,7 @@ function HomePage(){
                     
                 {
                     shoes.map((val,idx)=>{
+                        if(val.name.toLowerCase().includes(search?.toLocaleLowerCase()))
                         return(
                             <Shoes key={idx} data={val}/>
                         )

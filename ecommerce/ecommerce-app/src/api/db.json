@@ -39,6 +39,30 @@
       "username": "doni1234",
       "password": "123",
       "avatar_url": ""
+    },
+    {
+      "id": 6,
+      "name": "doni",
+      "email": "donnysaputra501@yahoo.com",
+      "username": "doni15",
+      "password": "Kantuik1234",
+      "avatar_url": ""
+    },
+    {
+      "id": 7,
+      "name": "",
+      "email": "",
+      "username": "",
+      "password": "",
+      "avatar_url": ""
+    },
+    {
+      "id": 8,
+      "name": "asdasd",
+      "email": "doni@mail.com",
+      "username": "doni10",
+      "password": "Kantuik1234",
+      "avatar_url": ""
     }
   ],
   "shoes": [
@@ -59,7 +83,7 @@
     {
       "id": 3,
       "name": "Nike Dunk High Retro",
-      "price": 175,
+      "price": "100",
       "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9cec8253-5997-42f6-9602-e20eb69142e2/dunk-high-retro-shoes-K1nb6g.png"
     },
@@ -74,7 +98,7 @@
       "id": 5,
       "name": "Nike Dunk High Retro",
       "price": 175,
-      "brand": "men",
+      "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/818bb456-4fb5-49c9-bc6c-51d7f4d0f371/court-vision-low-shoes-TGRtWS.png"
     },
     {
@@ -111,6 +135,27 @@
       "price": "180",
       "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f08d2d36-816b-4bfd-ae12-bc4a228bd060/air-zoom-pegasus-39-shield-weatherised-road-running-shoes-Fp3SPv.png"
+    },
+    {
+      "id": 11,
+      "name": "Ultraboost 1.0",
+      "price": "150",
+      "brand": "Adidas",
+      "img": "https://www.adidas.co.id/media/catalog/product/cache/3bec5fdb79d91223b1a151be2b21ce8d/h/q/hq4206_2_footwear_photography_side20lateral20view_grey.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Air Jordan 11 CMFT",
+      "price": "135",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dd568d4c-4536-461f-8c65-6cf09ae326f0/air-jordan-11-cmft-low-shoes-2C7fJQ.png"
+    },
+    {
+      "id": 13,
+      "name": "Air Deldon \"Lyme\"",
+      "price": "160",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dbb784c8-065f-467e-8f33-eb3a8defb603/air-deldon-lyme-easy-on-off-basketball-shoes-0rD12G.png"
     }
   ]
 }
