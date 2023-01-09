@@ -22,21 +22,26 @@ function HomePage(){
 
     async function fetchShoes(){
         const res = await axiosInstance.get("shoes")
-        setShoes([...res.data])
+        if(res.data.length){
+            setShoes([...res.data])
+        }else{
+            setShoes([res.data])
+        }
+       
      
     }
     
-   
+    // useEffect(()=>{
+    //     setSearch(location.state?.value)
+    // },[search])
   
     useEffect(() =>{
-       
+      
         setTimeout(()=>{
             setIsLoading(!isLoading)
             
         },50)
-        setSearch(location?.state?.dataSearch)
-        fetchShoes()       
-        console.log(location?.state?.dataSearch)
+        fetchShoes()
     },[])
     return(
         <>
@@ -46,12 +51,12 @@ function HomePage(){
             :
             <>
             
-        <Navbar user={userSelector}></Navbar>
+        <Navbar user={userSelector} setSearch={setSearch}></Navbar>
          <Grid  gap={"50px"} flexDir="rows" paddingX="30px" templateColumns="repeat(3,1fr)" marginTop="30px" w="100%" h="100%" >
                     
                 {
                     shoes.map((val,idx)=>{
-                        if(val.name.toLowerCase().includes(search?.toLocaleLowerCase()))
+                        if(val.name.toLowerCase().includes(location.state?.value?.toLocaleLowerCase()))
                         return(
                             <Shoes key={idx} data={val}/>
                         )

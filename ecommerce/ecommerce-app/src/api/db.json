@@ -83,7 +83,7 @@
     {
       "id": 3,
       "name": "Nike Dunk High Retro",
-      "price": "100",
+      "price": "150",
       "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9cec8253-5997-42f6-9602-e20eb69142e2/dunk-high-retro-shoes-K1nb6g.png"
     },
@@ -118,7 +118,7 @@
     {
       "id": 8,
       "name": "Air Jordan Low",
-      "price": "175",
+      "price": "100",
       "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c448b55f-60fd-46e9-a818-0d9bc392e8b1/air-jordan-1-low-flyease-easy-on-off-shoes-28LT69.png"
     },
@@ -156,6 +156,13 @@
       "price": "160",
       "brand": "Nike",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dbb784c8-065f-467e-8f33-eb3a8defb603/air-deldon-lyme-easy-on-off-basketball-shoes-0rD12G.png"
+    },
+    {
+      "id": 14,
+      "name": "Air MAx 97",
+      "price": "100",
+      "brand": "Nike",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cuvuokzz86meuxcssbma/air-max-97-shoes-z3TlrlVN.png"
     }
   ]
 }

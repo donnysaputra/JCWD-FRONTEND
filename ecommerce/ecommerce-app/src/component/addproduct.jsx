@@ -87,7 +87,7 @@ function AddProduct(props){
     }
     return(
 
-        <Center marginY="2.3%" >
+        <Center marginY="0.5%" >
             <Flex flexDir={"column"} w="900px" minH={"600px"} h="600px" border="1px solid lightgrey" bgColor={"white"}>
               <Grid templateRows={"0.5fr 0.3fr"}  >
                     <Center>

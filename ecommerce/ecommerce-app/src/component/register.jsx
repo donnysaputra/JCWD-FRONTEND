@@ -70,7 +70,7 @@ import YupPassword from 'yup-password';
             <FormControl>
            <Input name={"email"} onChange={(e)=>{formik.setFieldValue("email",e.target.value)}} pl="10px" fontFamily="helvetica" type={"text"} border="1px solid #DFDFDF" fontSize={"sm"} bgColor={"white"} w={"350px"} h={"45px"} mb={"20px"} placeholder={"Email Address"}></Input>
             <FormHelperText>
-            {formik.values.email}
+            {formik.errors.email}
             </FormHelperText>
             </FormControl>
             <Input name={"name"} onChange={(e)=>{formik.setFieldValue("name",e.target.value)}} pl="10px" fontFamily="helvetica" type={"text"} border="1px solid #DFDFDF" fontSize={"sm"} bgColor={"white"} w={"350px"} h={"45px"} mb={"20px"} placeholder={"Name"}></Input>
